@@ -53,10 +53,10 @@
                                     <!-- Memory selection  -->
 
                             <div>
-                                <button class="border border-gray-500 hover:bg-gray-400  p-2 rounded">8GB unified memory</button>
+                                <button id="8GB-memory" class="border border-gray-500 hover:bg-gray-400  p-2 rounded">8GB unified memory</button>
                             </div>
                             <div>
-                                <button class = "border border-gray-500 hover:bg-gray-400 p-2 rounded">16GB unified memory</button>
+                                <button id="16gb" class = "border border-gray-500 hover:bg-gray-400 p-2 rounded">16GB unified memory</button>
                             </div>
                         </div>
 
@@ -77,13 +77,13 @@
 
                         <div class="inline-flex gap-2">
                             <div>
-                                <button class="border border-gray-500 hover:bg-gray-400  p-2 rounded">256GB SSD Storage </button>
+                                <button id="256GB-ssd" class="border border-gray-500 hover:bg-gray-400  p-2 rounded">256GB SSD Storage</button>
                             </div>
                             <div>
-                                <button class = "border border-gray-500 hover:bg-gray-400 p-2 rounded">512GB SSD Storage</button>
+                                <button id="512GB-ssd" class = "border border-gray-500 hover:bg-gray-400 p-2 rounded">512GB SSD Storage</button>
                             </div>
                             <div>
-                                <button class = "border border-gray-500 hover:bg-gray-400 p-2 rounded">1TB SSD Storage</button>
+                                <button id="1tb-ssdstorage" class = "border border-gray-500 hover:bg-gray-400 p-2 rounded">1TB SSD Storage</button>
                             </div>
             
                                 <!-- Storege Section End -->
@@ -101,10 +101,10 @@
 
             <div class="inline-flex gap-2 mb-14">
                 <div>
-                    <button class="border border-gray-500 hover:bg-gray-400  p-2 rounded">Friday, 25 August FREE Prime Delivery</button>
+                    <button id="delivery" class="border border-gray-500 hover:bg-gray-400  p-2 rounded">Friday, 25 August FREE Prime Delivery</button>
                 </div>
                 <div>
-                    <button class = "border border-gray-500 hover:bg-gray-400 p-2 rounded">Friday, 21 August Delivery Charge $20</button>
+                    <button id="second-delivery" class = "border border-gray-500 hover:bg-gray-400 p-2 rounded">Friday, 21 August Delivery Charge $20</button>
                 </div>
         </div>
 
@@ -124,23 +124,23 @@
 
                                             <tr class="border-b-2">
                                                 <td>Best Price</td>
-                                                <td>$<span>1299</span></td>
+                                                <td>$<span id="best-price">1299</span></td>
                                             </tr>
                                             <tr class="border-b-2">
                                                 <td>Extra Memory Cost</td>
-                                                <td>$<span class="memory_cost" id="default_cost_memory">0</span></td>
+                                                <td>$<span  id="memory-cost">0</span></td>
                                             </tr>
                                             <tr class="border-b-2">
                                                 <td>Extra Storage Cost</td>
-                                                <td>$<span class="storage_cost" id="default_cost_storage">0</span></td>
+                                                <td>$<span id="storage-cost">0</span></td>
                                             </tr>
                                             <tr class="border-b-2 border-black">
                                                 <td>Delivary Charge</td>
-                                                <td>$<span class="delivery_cost" id="default_delivery">0</span></td>
+                                                <td>$<span id="delivery-cost">0</span></td>
                                             </tr>
-                                            <tr>
+                                            <tr class="shadow">
                                                 <td>Total</td>
-                                                <td>$<span class="total_price">1299</span></td>
+                                                <td>$<span id="total-price">1299</span></td>
                                             </tr>
                                         </table>
                                         
@@ -150,9 +150,9 @@
 
                                         <div class="mb-2">
                                             <label class="block font-medium text-xl" for="clickable">Add Promo Code</label>
-                                            <input id="clickable" class="input_promo_code rounded p-1 border-2 border-black mt-1"
+                                            <input id="promo-code" class="input_promo_code rounded p-1 border-2 border-black mt-1"
                                                 type="text">
-                                            <button id="button"
+                                            <button id="apply-btn"
                                                 class=" bg-red-600 hover:bg-gray-400 text-white font-medium px-3 py-1.5 rounded inline-flex promo_btn">
                                                 Apply
                                             </button>
@@ -167,7 +167,7 @@
         
         <section>
             <hr class=" mt-5 mx-24">
-            <h1 class="font-medium text-4xl  text-center p-4">Total: $<span class="total" id="Discount-Amount">0</span>
+            <h1 class="font-medium text-4xl  text-center p-4">Total: $<span id="in-total">0</span>
             </h1>
         </section>
 
